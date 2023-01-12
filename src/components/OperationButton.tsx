@@ -1,5 +1,4 @@
 import { Button, Grid, styled } from '@mui/material';
-import React from 'react';
 
 interface Props {
   operation: string;
@@ -18,7 +17,7 @@ const OperationButton = ({
   selectedOperation,
 }: Props) => {
   return (
-    <Grid item>
+    <Grid item xs={3}>
       <StyledButton
         fullWidth
         variant="outlined"
