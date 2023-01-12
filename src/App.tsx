@@ -25,8 +25,8 @@ function App() {
   const selectOperation = (operation: string) => {
     if (prevValue) {
       const value = calculate();
-      setCurrentValue(`{value}`);
-      setPrevValue(`{value}`);
+      setCurrentValue(`${value}`);
+      setPrevValue(`${value}`);
     } else {
       setPrevValue(currentValue);
     }
