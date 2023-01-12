@@ -23,7 +23,13 @@ function App() {
   };
 
   const selectOperation = (operation: string) => {
-    setPrevValue(currentValue);
+    if (prevValue) {
+      const value = calculate();
+      setCurrentValue(`{value}`);
+      setPrevValue(`{value}`);
+    } else {
+      setPrevValue(currentValue);
+    }
     setCurrentOperation(operation);
     setOverwrite(true);
   };
@@ -77,7 +83,10 @@ function App() {
   };
 
   return (
-    <Container maxWidth="sm">
+    <Container
+      maxWidth="sm"
+      sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+    >
       <Base elevation={3}>
         <Grid container spacing={1}>
           <Grid item xs={12}>
