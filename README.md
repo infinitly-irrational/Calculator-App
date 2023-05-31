@@ -1,6 +1,6 @@
 # Calculator App
 
-![Calculator App Screenshot](link-to-screenshot-if-available)
+![Calculator App Screenshot](src/assets/screenshot.png)
 
 ## Description
 
