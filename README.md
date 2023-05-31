@@ -1,4 +1,4 @@
-    # Calculator App
+# Calculator App
 
 ![Calculator App Screenshot](link-to-screenshot-if-available)
 
