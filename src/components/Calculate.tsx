@@ -4,7 +4,7 @@ export interface CalculateProps {
   currentOperation: string;
 }
 
-function Calculate({ prevValue, currentValue, currentOperation }: CalculateProps): string|number {
+function Calculate({ prevValue, currentValue, currentOperation }: CalculateProps): string {
   if (!prevValue || !currentOperation) return currentValue;
   const current = parseFloat(currentValue);
   const prev = parseFloat(prevValue);
@@ -23,10 +23,10 @@ function Calculate({ prevValue, currentValue, currentOperation }: CalculateProps
     case '÷':
       result = prev / current;
       break;
-     default:
+    default:
       result = currentValue; 
   }
-  return result;
+  return result.toString();
 }
 
 export default Calculate;
